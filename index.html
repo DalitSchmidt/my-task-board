@@ -1,0 +1,39 @@
+<html lang="en-he">
+	<head>
+		<meta charset="UTF-8">
+		<title>My Task Board</title>
+		<script src = "JS/MainJS.js"></script>
+		<link href = "http://fonts.googleapis.com/css?family=Handlee" rel = "stylesheet" type = "text/css">
+		<link rel = "stylesheet" type = "text/CSS" href = "CSS/Style.css">
+	</head>
+	<body>
+		<div>
+			<div id = "header">
+				<h1>My Task Board</h1>
+			</div>	
+			<div class = "main">
+				<div class = "noteBook">
+					<div class = "list">
+						<label for = "titleInput" title = "Title">Title: </label>
+						<input type = "text" id = "titleInput" maxlength = 200 placeholder = "Enter title..." title = "Enter title..."/>
+					</div>
+					<div class = "list">
+						<label for = "whenInput" title = "When">When: </label>
+						<input type = "text" id = "whenInput" maxlength = 100 placeholder = "Enter date..." title = "Enter date..."/>
+					</div>
+					<div class = "list">
+						<label for = "descriptionInput" title = "Description">Description: </label>
+						<textarea type = "text" id = "descriptionInput" maxlength = 10000 placeholder = "Enter description..." title = "Enter description..."></textarea>
+					</div>
+					<button onclick = "addTask()" type = "button" id = "addTask" title = "Add Task">Add Task</button>
+				</div>
+			</div>
+			<div id = "taskLists">
+			</div>
+			<div>
+				<h2>You have <span id = "counter">0</span> tasks</h2>
+			</div>
+		</div>
+		<script src = "JS/Note.js"></script>
+	</body>
+</html>

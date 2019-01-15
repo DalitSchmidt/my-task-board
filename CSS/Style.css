@@ -1,0 +1,147 @@
+body {
+	background-image: url("../Resources/IMG/WoodenBoard.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+	font-family: Handlee, cursive, sans-serif;
+	font-weight: bold;
+}
+
+#header {
+	width: 800px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3.5em;
+}
+
+.main {
+	margin: 0 auto;
+	width: 600px;
+	padding: 80px;
+	padding-left: 100px;
+	padding-bottom: 5px;
+	background-image: url("../Resources/IMG/NoteBook.jpg");
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.list {
+	clear: both;
+	text-align: right;
+	text-align: top;
+}
+
+.main label {
+	float: left;
+	text-align: top;
+	padding-right: 50px;
+}
+
+.noteBook {
+	float: left;
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: bold;
+}
+
+.list >input, textarea {
+	background-color: transparent;
+	font-family: Handlee, cursive, sans-serif;
+	font-weight: bold;
+	width: 300px;
+	height: 40px;
+	padding: 4px;
+	margin: 4px;
+	border: 3px double black; 
+	border-radius: 4px;
+	resize: none;
+}
+
+.list > #descriptionInput input, textarea {
+	height: 150px;
+}
+
+#addTask {
+	background-color: transparent;
+	color: black;
+	font-size: 18px;
+	text-align: center;
+	font-family: Handlee, cursive, sans-serif;
+	font-weight: bold;
+	padding: 10px 20px;
+	margin-left: 150px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 12px;
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	cursor: pointer;
+}
+
+#addTask:hover {
+	background-color: black;
+	color: white;
+}
+
+#taskLists {
+	width: 90%;
+	margin: 0 auto;
+	padding: 15px;
+	min-height: 300px;
+}
+
+#taskLists > div {
+	float: left;
+	margin: 20px;
+	padding: 30px;
+	width: 200px;
+	height: 250px;
+	font-size: 1em;
+	background-color: transparent;
+	background-image: url("../Resources/IMG/Note.jpg");
+	background-size: cover;
+	color: white;
+	position: relative;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.removeTask {
+	display: none;
+	position: absolute;
+	bottom: 90%;
+	left: 86%;
+	padding: 0%;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%; 
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: white;
+}
+
+.removeTask:hover {
+	background-color: red;
+}
+
+#taskLists > div:hover img {
+	display: block;
+}
+
+h2 {
+	margin: 0 auto;
+	width: 600px;
+	clear: both;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 3em;
+}
